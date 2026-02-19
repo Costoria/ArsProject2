@@ -1,0 +1,129 @@
+/* базовые настройки */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 115%;
+  margin: 0;
+  line-height: 1.5;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* Skip link (доступность) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px 12px;
+  text-decoration: none;
+  z-index: 1000;
+}
+.skip-link:focus {
+  left: 10px;
+}
+
+/* header / nav */
+header {
+  background: #1f2937;
+  padding: 12px 16px;
+}
+
+nav {
+  background: #374151;
+  padding: 10px;
+  display: inline-block; /* HW2 */
+  width: 80%;            /* HW2 */
+}
+
+/* descendant selector только для img внутри nav (HW2) */
+nav img {
+  width: 10%;
+  height: auto;
+  position: relative;
+  top: 20px;
+}
+
+/* list-style-type (HW2) */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 10px;
+  display: inline-block;
+}
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* HW2: старые стили li закомментированы */
+/*
+li {
+  display: inline-block;
+  width: 220px;
+}
+*/
+
+main {
+  background: #ffffff;
+  padding: 16px;
+  font-size: 110%;
+}
+
+footer {
+  background: #111827;
+  color: #ffffff;
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  color: #111827;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ===== GRID (HW2) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 18px;
+}
+
+/* descendant selector только для img внутри grid (HW2) */
+.grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== FLEX (HW2) ===== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.flex img {
+  width: 220px;
+  height: auto;
+  display: block;
+}
